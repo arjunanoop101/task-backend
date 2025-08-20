@@ -2,7 +2,7 @@
 
 1. Clone the repo
 2. createdb feathers_users using pgAdmin or terminal
-3. Insall dependencies
+3. Insall dependencies ->
      npm install
 4. Create a .env file
      DATABASE_URL = postgres://<user>:<password>@localhost:5432/feathers_users
