@@ -1,27 +1,12 @@
-# Feathers Users Backend
+## steps to run the backend
 
-A simple **User Management Backend** built with **FeathersJS**, **PostgreSQL**, and **Knex**.  
-This service provides APIs for managing users (CRUD) with migrations handled by Knex.
-
----
-
-## 🚀 Features
-- FeathersJS REST API
-- PostgreSQL database with Knex migrations
-- User management (add, update, delete, list)
-- Soft delete support (`deleted: false` filter)
-
----
-
-## 📦 Setup
-
-### 1. Clone Repository
-```bash
-git clone <your-repo-url>
-cd feathers-users-backend
-npm install
-DATABASE_URL=postgres://<user>:<password>@localhost:5432/feathers_users
-PORT=3030
-npx knex migrate:latest --knexfile knexfile.js
-npm run dev
-http://localhost:3030
+1. Clone the repo
+2. Insall dependencies
+     npm install
+3. Create a .env file
+     DATABASE_URL = postgres://<user>:<password>@localhost:5432/feathers_users
+     PORT = 3030
+4. Run database migrations
+     npx knex migrate:latest --knexfile knexfile.js
+5. Start the backend server
+6. Server will be running at http://localhost:3030
